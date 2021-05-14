@@ -30,110 +30,18 @@
         <li class="nav-item">
           <a class="nav-link" href="Contact.html">Contact</a>
         </li>
+        
         <li class="nav-item">
-          <a class="nav-link" href="Project.html">Projecten</a>
+          <a class="nav-link" href="Rekenmachine.html">Project2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Project.html">Andere projecten</a>
         </li>
       </ul>
     </div>
   </nav>
-  <style type="text/css">
-    .grid-container {
-      display: grid;
-      grid-template-columns: auto auto auto;
-      background-color: #2196F3;
-      padding: 10px;
-    }
-  </style>
-  <div class="grid-container">
-    <div class="grid-item">1</div>
-    <div class="grid-item">2</div>
-    <div class="grid-item">3</div>
-    <div class="grid-item">4</div>
-    <div class="grid-item">5</div>
-    <div class="grid-item">6</div>
-    <div class="grid-item">7</div>
-    <div class="grid-item">8</div>
-    <div class="grid-item">9</div>
-  </div>
-  <style>
-    .droptarget {
-      float: left;
-      width: 100px;
-      height: 35px;
-      margin: 15px;
-      padding: 10px;
-      border: 1px solid #aaaaaa;
-    }
-  </style>
-  <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag me!</p>
-  </div>
-  <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-  <script>
-    /* Events fired on the drag target */
-    function dragStart(event) {
-      event.dataTransfer.setData("Text", event.target.id);
-    }
 
-    function dragging(event) {
-      document.getElementById("demo").innerHTML = "The p element is being dragged";
-    }
-
-
-    /* Events fired on the drop target */
-    function allowDrop(event) {
-      event.preventDefault();
-    }
-
-    function drop(event) {
-      event.preventDefault();
-      var data = event.dataTransfer.getData("Text");
-      event.target.appendChild(document.getElementById(data));
-      document.getElementById("demo").innerHTML = "The p element was dropped";
-    }
-  </script>
-  <style>
-    .droptarget {
-      float: left;
-      width: 100px;
-      height: 35px;
-      margin: 15px;
-      padding: 10px;
-      border: 1px solid #aaaaaa;
-    }
-  </style>
-  <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag me!</p>
-  </div>
-  <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-  <script>
-    /* Events fired on the drag target */
-    function dragStart(event) {
-      event.dataTransfer.setData("Text", event.target.id);
-    }
-
-    function dragging(event) {
-      document.getElementById("demo").innerHTML = "The p element is being dragged";
-    }
-
-
-    /* Events fired on the drop target */
-    function allowDrop(event) {
-      event.preventDefault();
-    }
-
-    function drop(event) {
-      event.preventDefault();
-      var data = event.dataTransfer.getData("Text");
-      event.target.appendChild(document.getElementById(data));
-      document.getElementById("demo").innerHTML = "The p element was dropped";
-    }
-  </script>
-
-
-
-
-  </div>
+  
   <br>
   <h1><strong>Projecten:</strong></h1>
   <br>
@@ -151,31 +59,135 @@
       </div>
     </div>
   </div>
+  <br> <br>
+  <body>
+    <h3>Project 1.</h3>
+    <html>
+    <p>Hier heb ik een theme switch gemaakt. Dit is handig voor als je lang moet werken bijvoorbeeld in de avond.</p>
+    <p>als het avond is is het niet echt fijn als je wit licht hebt.</p>
+    Dit is ook slecht voor je ogen. Om 17:00 veranderd ie naar zwart.
+    Je kunt zelf kiezen of je hem aan wilt zetten. De keuze is aan jouw.
+    </p>
 
-  <br>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        body {
+          padding: 25px;
+          background-color: white;
+          color: black;
+          font-size: 25px;
+        }
 
-  <p>We moesten een website maken voor een sportschool.</p>
-  <img src="Sportschool project.jpg">
-  <br>
-  <p>We moesten een wireframe maken.</p>
-  <img src="WireFrame.JPG">
-  <p><a href="#" class="text-success">Success link</a></p>
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-    © 2021 Copyright:
-    <a class="text-dark" href="https://mdbootstrap.com/">Portfolio</a>
-  </div>
-  
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-</body>
+        .dark-mode {
+          background-color: black;
+          color: white;
+        }
+      </style>
+    </head>
+    
+    
+
+
+    <body>
+
+      <h2>Toggle Dark/Light Mode</h2>
+      <p>Click the button to toggle between dark and light mode for this page.</p>
+
+      <button class="dark-mode">Toggle dark mode</button>
+
+      <script>
+        function myFunction() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        }
+
+        const button = document.querySelector(".dark-mode");
+
+        let lightModeOn = true;
+        const toggleTheme = function () {
+
+          const body = document.querySelector("body")
+
+          body.classList.toggle("dark-mode")
+
+          if (lightModeOn) {
+            lightModeOn = false;
+          } else {
+            lightModeOn = true;
+
+          }
+          console.log(lightModeOn)
+
+
+        }
+
+        button.addEventListener("click", toggleTheme);
+
+
+
+
+
+
+
+
+        setInterval(function () {
+          console.log("elke seconde uitgevoerd!");
+          const date = new Date();
+          console.log(date);
+          if (date.getSeconds() > 7 && date.getSeconds() < 17) {
+            console.log("lightModeOn")
+            if (lightModeOn == false) {
+              toggleTheme();
+
+
+
+            }
+          }
+          else {
+            console.log("todarkmode")
+          }
+        }, 1000);
+
+        setInterval(checkTheme, 1000);
+
+
+
+
+
+
+
+
+
+
+      </script>
+
+    </body>
+
+    <br> <br>
+
+    <p>We moesten een website maken voor een sportschool.</p>
+    <img src="Sportschool project.jpg">
+    <br>
+    <p>We moesten een wireframe maken.</p>
+    <img src="WireFrame.JPG">
+    <p><a href="#" class="text-success">Success link</a></p>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2021 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">Portfolio</a>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  </body>
 
 </html>
